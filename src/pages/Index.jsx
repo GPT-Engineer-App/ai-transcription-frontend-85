@@ -22,7 +22,7 @@ const Index = () => {
           <Spinner size="xl" />
         </Flex>
       ) : (
-        <Table variant="simple">
+        <Table variant="simple" rounded="lg">
           <Thead>
             <Tr>
               <Th>File Name</Th>
