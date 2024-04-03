@@ -2,21 +2,15 @@ import React, { useState, useEffect } from "react";
 import { Box, Heading, Table, Thead, Tbody, Tr, Th, Td, Tag, Spinner, Flex, Text } from "@chakra-ui/react";
 
 const Index = () => {
-  const [files, setFiles] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const sampleData = [
+    { name: "file1.txt", size: 1024, type: "summary" },
+    { name: "file2.txt", size: 2048, type: "transcription" },
+    { name: "file3.txt", size: 0, type: "summary" },
+    { name: "file4.txt", size: 4096, type: "transcription" },
+  ];
 
-  useEffect(() => {
-    // Simulating fetching data from Google Cloud Storage
-    const fetchFiles = async () => {
-      // Replace this with your actual API call to fetch files from Google Cloud Storage
-      const response = await fetch("https://api.example.com/files");
-      const data = await response.json();
-      setFiles(data);
-      setIsLoading(false);
-    };
-
-    fetchFiles();
-  }, []);
+  const [files, setFiles] = useState(sampleData);
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <Box p={4}>
