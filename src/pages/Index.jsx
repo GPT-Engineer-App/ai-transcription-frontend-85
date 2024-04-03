@@ -33,7 +33,7 @@ const Index = () => {
           </Thead>
           <Tbody>
             {files.map((file, index) => (
-              <Tr key={file.name} bg={index % 2 === 0 ? "gray.100" : "white"} border="1px" borderColor="gray.200" p={2} mb={2}>
+              <Tr key={file.name} bg={index % 2 === 0 ? "gray.100" : "white"} border="1px" borderColor="gray.200" p={2} mb={2} boxShadow="md">
                 <Td>{file.name}</Td>
                 <Td>{file.size} bytes</Td>
                 <Td>{file.size === 0 ? <Text color="red.500">Failed</Text> : <Text color="green.500">Success</Text>}</Td>
