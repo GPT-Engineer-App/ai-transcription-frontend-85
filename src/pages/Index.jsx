@@ -22,7 +22,7 @@ const Index = () => {
           <Spinner size="xl" />
         </Flex>
       ) : (
-        <Table variant="simple" rounded="lg" borderCollapse="separate !important" sx={{ borderCollapse: "separate !important" }}>
+        <Table variant="simple" rounded="lg" border="2px solid" borderColor="gray.100" borderCollapse="separate !important" sx={{ borderCollapse: "separate !important" }}>
           <Thead>
             <Tr>
               <Th>File Name</Th>
