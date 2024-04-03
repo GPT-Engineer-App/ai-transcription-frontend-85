@@ -28,7 +28,7 @@ const theme = extendTheme({
     Table: {
       baseStyle: {
         th: {
-          color: "gray.100",
+          color: "white",
         },
       },
     },
