@@ -36,7 +36,17 @@ const Index = () => {
               <Tr key={file.name} bg="gray.900" border="1px" borderColor="white" p={2} mb={2} boxShadow="lg" rounded="md">
                 <Td color="white">{file.name}</Td>
                 <Td color="white">{file.size} bytes</Td>
-                <Td>{file.size === 0 ? <Text color="red.500">Failed</Text> : <Text color="green.500">Success</Text>}</Td>
+                <Td>
+                  {file.size === 0 ? (
+                    <Text color="red.500" bg="red.100" p={1} rounded="md">
+                      Failed
+                    </Text>
+                  ) : (
+                    <Text color="green.500" bg="green.100" p={1} rounded="md">
+                      Success
+                    </Text>
+                  )}
+                </Td>
                 <Td>
                   <Tag colorScheme={file.type === "summary" ? "blue" : "purple"}>{file.type}</Tag>
                 </Td>

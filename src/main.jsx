@@ -32,6 +32,13 @@ const theme = extendTheme({
         },
       },
     },
+    Table: {
+      baseStyle: {
+        th: {
+          color: "white",
+        },
+      },
+    },
   },
 });
 
