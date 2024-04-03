@@ -22,7 +22,7 @@ const Index = () => {
           <Spinner size="xl" />
         </Flex>
       ) : (
-        <Table variant="simple" rounded="lg" border="2px solid" borderColor="gray.100" borderCollapse="separate !important" sx={{ borderCollapse: "separate !important" }}>
+        <Table variant="simple" rounded="lg" border="2px solid" borderColor="gray.100">
           <Thead>
             <Tr>
               <Th>File Name</Th>
@@ -33,7 +33,7 @@ const Index = () => {
           </Thead>
           <Tbody>
             {files.map((file, index) => (
-              <Tr key={file.name} bg={index % 2 === 0 ? "gray.900" : "gray.800"} border="1px" borderColor="white" p={4} mb={4} boxShadow={index % 2 === 0 ? "lg" : "none"} rounded="lg">
+              <Tr key={file.name} bg={index % 2 === 0 ? "gray.900" : "gray.800"} p={4} mb={4} boxShadow={index % 2 === 0 ? "lg" : "none"} rounded="lg">
                 <Td color="white">{file.name}</Td>
                 <Td color="white">{file.size} bytes</Td>
                 <Td>
