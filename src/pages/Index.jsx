@@ -14,7 +14,7 @@ const Index = () => {
 
   return (
     <Box p={4}>
-      <Heading as="h1" size="xl" mb={4}>
+      <Heading as="h1" size="xl" mb={4} color="white">
         AI Transcription Summary Tool
       </Heading>
       {isLoading ? (
