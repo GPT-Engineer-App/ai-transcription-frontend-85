@@ -26,16 +26,11 @@ const theme = extendTheme({
   },
   components: {
     Table: {
-      baseStyle: {
-        th: {
-          color: "white",
-        },
-      },
-    },
-    Table: {
-      baseStyle: {
-        th: {
-          color: "white",
+      variants: {
+        simple: {
+          th: {
+            color: "white",
+          },
         },
       },
     },
